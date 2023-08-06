@@ -1,0 +1,411 @@
+body {
+	font-size: 16px;
+	color: #fff;
+	background-color: #61122f;
+	font-family: 'Oxygen', sans-serif;
+}
+
+#header-nav {
+	background-color: #f6b319;
+	border-radius: 0;
+	border: 0;
+	padding: 0;
+	position: relative;
+    min-height: 50px;
+}
+
+.container {
+	display: block!important;
+}
+
+.navbar-header {
+	float: left;
+}
+
+#logo-img {
+	background: url("../images/restaurant-logo_large.png") no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+  margin-left: -15px;
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.custom {
+	display: block;
+	float: left;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.collapse a{
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand a {
+	text-decoration: none;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: underline;
+}
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+#nav-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+#nav-list a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  color: #951C49;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* We Deliver */
+  color: #557c3e;
+  text-align: right;
+  
+}
+i {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.navbar-toggler {
+  border: 1px solid #61122f;
+  clear: both;
+  margin: -0px 15px 10px;
+  position: relative;
+  float: right;
+  padding: 2px 6px 2px 6px;
+  transition: all 1.5s ease;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  clear: both;
+  position: relative;
+  float: right;
+  width: 30px;
+  height: 30px;
+  color: red;
+
+}
+
+#collapsable-nav{
+	transition: all 0.5s ease;
+}
+/* END HEADER */
+
+/* FOOTER */
+
+.bg-dark {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+
+.bg-dark div.row {
+  margin-bottom: 35px;
+}
+
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+
+/* HOME PAGE */
+
+
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+
+}
+
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  margin-top: 15px;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+#specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+/*END HOME PAGE*/
+
+/* MENU CATEGORIES PAGE */
+.category-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 3px 6px 3px #ffff66;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* END MENU CATEGORIES PAGE */
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+    width: 100%;
+    margin-top: 20px;
+    background-size: cover;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+   
+  
+  .navbar-header {
+  	margin-right: auto;
+    margin-left: 0;
+  }
+  #collapsable-nav {
+    font-size: 12px;
+  }
+  #nav-list a:hover {
+  background: #E7E7E7;
+  }
+
+  /* End Header */
+
+    /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+    margin-top: 20px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+   .navbar-header{
+   	width: 100%;
+   }
+   
+   #nav-list {
+   	display: block;
+   	width: 100%;
+   }
+
+   #nav-list a {
+  	flex-direction: row;
+  	padding: 10px;
+  }
+  .nav-item {
+  	box-shadow: 0 0 6px black;
+  }
+ 
+  i {
+    margin-right: 10px;
+  }
+
+   #collapsable-nav {
+  	
+  	clear: both;
+  	border-color: #fff;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .navbar-toggler {
+    position: relative;
+    float: right;
+    margin-top: -60px;
+  }
+
+
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+    margin-top: 20px;
+  }
+  /* End Home Page */
+
+}
+/********** Extra Small devices only **********/
+@media (max-width: 767px) {
+  #header-nav {
+  	display: block!important;
+  	min-height: 100px;
+  	min-width: 100%;
+  }
+  .navbar-header {
+    position: relative;
+    height: 100px;
+    width: 100%;
+  }
+  #nav-list {
+   	display: flex;
+   	flex-direction: column;
+   	width: 100%;
+   }
+
+   #nav-list a {
+  	flex-direction: row;
+  	padding: 10px;
+  }
+  .nav-item {
+  	box-shadow: 0 0 6px black;
+    margin: 5px;
+  }
+  .navbar-toggler {
+  	position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  i {
+  	margin-right: 10px;
+  }
+
+/*Footer*/
+ .bg-dark section{
+ 	text-align: center;
+ 	margin-bottom: 25px;
+ }
+ section > hr {
+ 	margin: 10px auto;
+ 	width: 50%;
+ 	opacity: 1;
+ }
+ .bg-dark section:nth-child(3) {
+ 	margin-bottom: 0px;
+ }
+/* Home Page */
+ .container .jumbotron {
+ 	margin-top: 20px;
+    }
+  }
+
+/*Super extra small devices*/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* Menu Page */
+  .custom-xxs {
+    width: 100%;
+  }
+}
